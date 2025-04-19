@@ -72,6 +72,8 @@ Create the following:
  
 # Final Output for Node.js Project.
 
+![image](https://github.com/user-attachments/assets/401a747f-2344-4130-8e65-0339d49912f9)
+
 ![Screenshot (510)](https://github.com/user-attachments/assets/02f3b7cb-abe0-44ef-b938-c7280161eae2)
 
 ![Screenshot 2025-04-19 151126](https://github.com/user-attachments/assets/a3cdc22c-c430-4035-a625-3bcd15063be4)
