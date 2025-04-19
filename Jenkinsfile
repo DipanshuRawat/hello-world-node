@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-repo/hello-world-node.git'
+                git branch: 'main', url: 'https://github.com/DipanshuRawat/hello-world-node.git'
             }
         }
 
