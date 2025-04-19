@@ -65,6 +65,7 @@ Create the following:
   - ID: `jenkins-credential-id-for-dockerhub`
 
 - **KUBECONFIG_CREDENTIALS_ID**
+  - Run deplyment and service manually then 
   - Kind: Secret file
   - Upload your `kubeconfig` file (`~/.kube/config`)
   - ID: `jenkins-credential-id-for-kubeconfig`
