@@ -43,20 +43,6 @@ pipeline {
                 }
             }
         }
-        
-        stage('Generate Kubeconfig for Jenkins') {
-            steps {
-                sh '''
-                    mkdir -p $WORKSPACE/kubeconfig
-        
-                    # Copy the current kubeconfig and flatten it
-                    kubectl config use-context minikube
-                    kubectl config view --flatten --minify > $WORKSPACE/kubeconfig/config
-        
-                    echo "KUBECONFIG generated successfully."
-                '''
-            }
-        }
 
         stage('Deploy to Kubernetes') {
             steps {
