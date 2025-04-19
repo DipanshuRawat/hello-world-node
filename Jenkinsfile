@@ -49,10 +49,9 @@ pipeline {
                 withCredentials([file(credentialsId: "${KUBECONFIG_CREDENTIALS_ID}", variable: 'KUBECONFIG')]) {
                     sh '''
                         export KUBECONFIG=$KUBECONFIG
-
+                        chmod 600 $KUBECONFIG  # Ensure the kubeconfig file is readable
                         kubectl apply -f deployment.yaml
                         kubectl apply -f service.yaml
-
                         kubectl rollout status deployment/hello-world-deployment
                     '''
                 }
