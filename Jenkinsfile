@@ -61,10 +61,10 @@ pipeline {
 
     post {
         success {
-            echo '🎉 Build and Deployment Successful!'
+            echo 'Build and Deployment Successful!'
         }
         failure {
-            echo '❌ Build or Deployment Failed! Check logs.'
+            echo 'Build or Deployment Failed! Check logs.'
         }
         always {
             cleanWs()  // Clean workspace
